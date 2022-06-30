@@ -18,7 +18,7 @@ import (
 	"github.com/kyokomi/emoji/v2"
 )
 ```
-
+ 
 ## Usage
 
 ```go
