@@ -9,6 +9,7 @@ import (
 	"os"
 	"sort"
 	"text/template"
+	"github.com/kyokomi/emoji/v2"
 )
 
 var pkgName string
@@ -160,4 +161,11 @@ func main() {
 	if _, err := file.Write(codeMapSource); err != nil {
 		log.Fatalln(err)
 	}
+
+	fmt.Println("Hello World Emoji!")
+
+	emoji.Println(":beer: Beer!!!")
+
+	pizzaMessage := emoji.Sprint("I like a :pizza: and :sushi:!!")
+	fmt.Println(pizzaMessage)
 }
